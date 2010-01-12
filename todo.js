@@ -10,8 +10,8 @@ var todo = {
     remove : function(id){
         delete this.list[id];
         this.persist();
-        var item = document.getElementById('todo-' + id);
-        todolist.removeChild(item);
+        //var item = document.getElementById('todo-' + id);
+        //todolist.removeChild(item);
     },
     persist : function(){
         var jsontxt = JSON.stringify(this.list);
